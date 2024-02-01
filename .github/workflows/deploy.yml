@@ -38,7 +38,8 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: check path
-        run: cd '/home/runner/work/Garderie/Garderie/src/components/layout/'
+        run: cd /home/runner/work/Garderie/Garderie/src/components/layout/
+             ls
       - name: List path
         run: ls
       - name: Build
