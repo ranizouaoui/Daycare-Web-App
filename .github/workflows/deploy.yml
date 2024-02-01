@@ -37,11 +37,6 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: check path
-        run: cd /home/runner/work/Garderie/Garderie/src/components/layout/
-             ls
-      - name: List path
-        run: ls
       - name: Build
         run: npm run build
       - name: Setup Pages
