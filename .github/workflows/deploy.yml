@@ -37,6 +37,10 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: check path
+        run: pwd
+      - name: List path
+        run: ls
       - name: Build
         run: npm run build
       - name: Setup Pages
