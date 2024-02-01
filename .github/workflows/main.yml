@@ -32,3 +32,4 @@ jobs:
         run: |
           ls -l
           echo "Current Directory: $PWD"
+          echo "Contents of src/components/layout: $(ls -l src/components/layout)"
