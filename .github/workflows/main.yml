@@ -1,4 +1,27 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy to GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
 jobs:
+  # Single deploy job since we're just deploying
   build:
     runs-on: ubuntu-latest
     steps:
@@ -9,4 +32,3 @@ jobs:
         run: |
           ls -l
           echo "Current Directory: $PWD"
-          echo "Contents of src/components/layout: $(ls -l src/components/layout)"
