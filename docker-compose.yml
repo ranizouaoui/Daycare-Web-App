@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfiles/frontend.dockerfile
+    container_name: frontend_container
+    ports:
+      - "80:80"
