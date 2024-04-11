@@ -2,6 +2,7 @@ import { createApp, h } from 'vue'
 import App from './App.vue'
 import router from './router/routes';
 import store from './store/index'
+import { SYNC_FUSION_LICENSE_KEY } from './API/Api'; 
 // CSS
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -16,7 +17,7 @@ import 'swiper/swiper-bundle.min.css';
 
 import { registerLicense } from "@syncfusion/ej2-base";
 
-registerLicense("Ngo9BigBOggjHTQxAR8/V1NAaF5cWWRCfEx0QHxbf1x0ZFdMY1lbQXJPIiBoS35RckViW3lfdXBdRGlaU0x+");
+registerLicense(SYNC_FUSION_LICENSE_KEY);
 
 const app = createApp({
     beforeCreate() {
