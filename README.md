@@ -39,7 +39,7 @@ You can now access the server at http://localhost/ .
 
 ## App preview
 
-    <div align="center"> 
+<div align="center"> 
 <img src="https://github.com/ranizouaoui/Garderie/blob/main/frontend/src/assets/home.png" alt="" />
  </div>
  <div align="center"> 
